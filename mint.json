@@ -89,7 +89,7 @@
       {
         "group": "AI Recommendation",
         "pages": [
-          "ai-recommendation/get-ai-recommended-skus"
+          "checkout/ai-recommendation/get-ai-recommended-skus"
         ]
       },
       {
