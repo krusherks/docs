@@ -15,7 +15,6 @@
       "to": "#5d3fd3"
     }
   },
-  "openapi": ["/openapi.yml"],
   "topbarLinks": [
     {
       "name": "Support",
