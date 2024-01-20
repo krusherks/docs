@@ -15,7 +15,7 @@
       "to": "#5d3fd3"
     }
   },
-  "openapi": ["/bundl.yaml"],
+  "openapi": ["/openapi.yml"],
   "topbarLinks": [
     {
       "name": "Support",
