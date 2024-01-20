@@ -76,17 +76,17 @@
       ]
     },
     {
-        "group": "AI Recommendation",
-        "pages": [
-          "checkout/get-ai-recommended-skus"
-        ]
-      },
-    {
         "group": "Checkout",
         "pages": [
           "checkout/create-checkout-cart",
           "checkout/add-product-to-cart",
           "checkout/update-customer-address"
+        ]
+      },
+      {
+        "group": "AI Recommendation",
+        "pages": [
+          "ai-recommendation/get-ai-recommended-skus"
         ]
       }
   ],

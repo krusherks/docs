@@ -15,14 +15,13 @@ externalDocs:
   description: Find out more about spec
   url: ''
 servers:
-  - url: https://app.bundl.ai
+  - url: https://app.bundl.ai/api/v1
     description: ''
 tags:
-  - name: Default
+  - name: Checkout
     description: ''
 paths:
-  /api/v1/createcart:
-    parameters: []
+  /createcart:
     post:
       description: Create a checkout cart
       operationId: post-api-v1-createcart
@@ -49,9 +48,8 @@ paths:
           description: Cart created
       summary: Create Checkout Cart
       tags:
-        - Default
-  /api/v1/addtocart:
-    parameters: []
+        - Checkout
+  /addtocart:
     post:
       description: Add products to cart
       operationId: post-api-v1-addtocart
@@ -154,9 +152,8 @@ paths:
           description: Product Added to Cart
       summary: Add Product to Cart
       tags:
-        - Default
-  /api/v1/getskus:
-    parameters: []
+        - Checkout
+  /getskus:
     post:
       description: 'AI recommendation of SKUs'
       operationId: post-api-v1-getskus
@@ -921,9 +918,8 @@ paths:
           description: Products Retrieved
       summary: Get AI Recommended SKUs
       tags:
-        - Default
-  /api/v1/updateaddress:
-    parameters: []
+        - AI Recommendation
+  /updateaddress:
     post:
       description: 'Update cutomer address in cart'
       operationId: post-api-v1-updateaddress
@@ -1053,7 +1049,7 @@ paths:
           description: Customer Address Updated
       summary: Update Customer Address
       tags:
-        - Default
+        - Checkout
 components:
   schemas: {}
   securitySchemes: {}
