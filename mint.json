@@ -8,10 +8,10 @@
   "favicon": "/logo/favicon.svg",
   "colors": {
     "primary": "#5d3fd3",
-    "light": "#5d3fd3",
-    "dark": "#5d3fd3",
+    "light": "#D3983F",
+    "dark": "#D3983F",
     "anchors": {
-      "from": "#5d3fd3",
+      "from": "#D3983F",
       "to": "#5d3fd3"
     }
   },
@@ -28,11 +28,7 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "checkout"
-    },
-    {
-      "name": "Test",
-      "url": "plants"
+      "url": "api-reference"
     }
   ],
   "anchors": [
@@ -75,35 +71,23 @@
     {
       "group": "API Documentation",
       "pages": [
-        "checkout/introduction"
+        "api-reference/introduction"
       ]
     },
     {
         "group": "Checkout",
         "pages": [
-          "checkout/create-checkout-cart",
-          "checkout/add-product-to-cart",
-          "checkout/update-customer-address"
+          "api-reference/checkout/create-checkout-cart",
+          "api-reference/checkout/add-product-to-cart",
+          "api-reference/checkout/update-customer-address"
         ]
       },
       {
         "group": "AI Recommendation",
         "pages": [
-          "checkout/ai-recommendation/get-ai-recommended-skus"
+          "api-reference/ai-recommendation/get-ai-recommended-skus"
         ]
-      },
-      {
-            "group": "Test",
-            "pages": [
-              "plants/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "plants/create"
-            ]
-          }
+      }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
