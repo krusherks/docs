@@ -6,7 +6,7 @@ info:
     engine to enable a powerful checkout experience in your platform.
   termsOfService: ''
   contact:
-    email: 'krusherks@gmail.com'
+    email: krusherks@gmail.com
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -24,10 +24,7 @@ paths:
   /api/v1/createcart:
     parameters: []
     post:
-      description: 'Create a checkout cart'
-      meta:
-        element: ''
-        originalPath: https://app.bundl.ai/api/v1/createcart
+      description: Create a checkout cart
       operationId: post-api-v1-createcart
       parameters: []
       responses:
@@ -37,10 +34,8 @@ paths:
               examples:
                 example-0001:
                   value:
-                    id: >-
-                      gid://shopify/Checkout/e03d65427bade8828d9d5b6f460389e4?key=abf0140b69397b6e301cf327926e27e6
-                    url: >-
-                      https://fb4e0e-3.myshopify.com/64172327109/checkouts/e03d65427bade8828d9d5b6f460389e4?key=abf0140b69397b6e301cf327926e27e6
+                    id: gid://shopify/Checkout/e03d65427bade8828d9d5b6f460389e4?key=abf0140b69397b6e301cf327926e27e6
+                    url: https://fb4e0e-3.myshopify.com/64172327109/checkouts/e03d65427bade8828d9d5b6f460389e4?key=abf0140b69397b6e301cf327926e27e6
               schema:
                 additionalProperties: false
                 properties:
@@ -48,10 +43,7 @@ paths:
                     type: string
                   url:
                     format: uri
-                    qt-uri-protocols:
-                      - https
                     type: string
-                required: []
                 title: APIV1CreatecartPostResponse
                 type: object
           description: Cart created
@@ -61,10 +53,7 @@ paths:
   /api/v1/addtocart:
     parameters: []
     post:
-      description: 'Add products to cart'
-      meta:
-        element: ''
-        originalPath: https://app.bundl.ai/api/v1/addtocart
+      description: Add products to cart
       operationId: post-api-v1-addtocart
       parameters: []
       requestBody:
@@ -73,8 +62,7 @@ paths:
             examples:
               example-0001:
                 value:
-                  checkoutId: >-
-                    gid://shopify/Checkout/e03d65427bade8828d9d5b6f460389e4?key=abf0140b69397b6e301cf327926e27e6
+                  checkoutId: gid://shopify/Checkout/e03d65427bade8828d9d5b6f460389e4?key=abf0140b69397b6e301cf327926e27e6
                   quantity: 1
                   variantId: gid://shopify/ProductVariant/42726527697093
             schema:
@@ -86,7 +74,6 @@ paths:
                   type: integer
                 variantId:
                   type: string
-              required: []
               title: APIV1AddtocartPostRequest
               type: object
       responses:
@@ -133,7 +120,6 @@ paths:
                                     type: string
                                   currencyCode:
                                     type: string
-                                required: []
                                 title: V2
                                 type: object
                               subtotalPriceV2:
@@ -143,7 +129,6 @@ paths:
                                     type: string
                                   currencyCode:
                                     type: string
-                                required: []
                                 title: V2
                                 type: object
                               totalTaxV2:
@@ -153,24 +138,17 @@ paths:
                                     type: string
                                   currencyCode:
                                     type: string
-                                required: []
                                 title: V2
                                 type: object
                               webUrl:
                                 format: uri
-                                qt-uri-protocols:
-                                  - https
                                 type: string
-                            required: []
                             title: Checkout
                             type: object
-                        required: []
                         title: CheckoutLineItemsAdd
                         type: object
-                    required: []
                     title: Data
                     type: object
-                required: []
                 title: APIV1AddtocartPostResponse
                 type: object
           description: Product Added to Cart
@@ -180,10 +158,7 @@ paths:
   /api/v1/getskus:
     parameters: []
     post:
-      description: ''
-      meta:
-        element: ''
-        originalPath: https://app.bundl.ai/api/v1/getskus
+      description: 'AI recommendation of SKUs'
       operationId: post-api-v1-getskus
       parameters: []
       requestBody:
@@ -198,7 +173,6 @@ paths:
               properties:
                 input:
                   type: string
-              required: []
               title: APIV1GetskusPostRequest
               type: object
       responses:
@@ -939,11 +913,9 @@ paths:
                           type: string
                         score:
                           type: number
-                      required: []
                       title: Result
                       type: object
                     type: array
-                required: []
                 title: APIV1GetskusPostResponse
                 type: object
           description: Products Retrieved
@@ -953,10 +925,7 @@ paths:
   /api/v1/updateaddress:
     parameters: []
     post:
-      description: ''
-      meta:
-        element: ''
-        originalPath: https://app.bundl.ai/api/v1/updateaddress
+      description: 'Update cutomer address in cart'
       operationId: post-api-v1-updateaddress
       parameters: []
       requestBody:
@@ -1000,7 +969,6 @@ paths:
                 zip:
                   format: integer
                   type: string
-              required: []
               title: APIV1UpdateaddressPostRequest
               type: object
       responses:
@@ -1060,35 +1028,26 @@ paths:
                                               type: string
                                             currencyCode:
                                               type: string
-                                          required: []
                                           title: PriceV2
                                           type: object
                                         title:
                                           type: string
-                                      required: []
                                       title: ShippingRate
                                       type: object
                                     type: array
-                                required: []
                                 title: AvailableShippingRates
                                 type: object
                               id:
                                 type: string
                               webUrl:
                                 format: uri
-                                qt-uri-protocols:
-                                  - https
                                 type: string
-                            required: []
                             title: Checkout
                             type: object
-                        required: []
                         title: CheckoutShippingAddressUpdateV2
                         type: object
-                    required: []
                     title: Data
                     type: object
-                required: []
                 title: APIV1UpdateaddressPostResponse
                 type: object
           description: Customer Address Updated

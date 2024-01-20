@@ -76,17 +76,23 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
+        "group": "AI Recommendation",
+        "pages": [
+          "checkout/get-ai-recommended-skus"
+        ]
+      },
+    {
+        "group": "Checkout",
+        "pages": [
+          "checkout/create-checkout-cart",
+          "checkout/add-product-to-cart",
+          "checkout/update-customer-address"
+        ]
+      }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://www.linkedin.com/company/bundlai"
   }
 }
