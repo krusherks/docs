@@ -30,6 +30,10 @@
     {
       "name": "API Reference",
       "url": "checkout"
+    },
+    {
+      "name": "Test",
+      "url": "plants"
     }
   ],
   "anchors": [
@@ -88,7 +92,19 @@
         "pages": [
           "ai-recommendation/get-ai-recommended-skus"
         ]
-      }
+      },
+      {
+            "group": "Test",
+            "pages": [
+              "plants/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "plants/create"
+            ]
+          }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
