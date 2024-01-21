@@ -33,19 +33,14 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Getting Started",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.bundl.ai/getting-started"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Quick Start",
+      "icon": "rocket",
+      "url": "https://docs.bundl.ai/quickstart"
     }
   ],
   "navigation": [
@@ -54,18 +49,7 @@
       "pages": [
         "introduction",
         "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "getting-started"
       ]
     },
     {
@@ -90,8 +74,8 @@
       }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
+    "instagram": "https://www.instagram.com/bundl.ai/",
+    "github": "https://github.com/krusherks/lucy-bot",
     "linkedin": "https://www.linkedin.com/company/bundlai"
   }
 }
