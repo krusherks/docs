@@ -171,8 +171,12 @@ paths:
               properties:
                 input:
                   type: string
+                  required: true
+                  children: Enter the search query you want the Product recommendations for.
                 limit:
                   type: integer
+                  required: false
+                  children: Set the limit for the number of products you want returned from the AI Recommendation Endpoint. If this value is not set, it defaults to 50.
               title: APIV1GetskusPostRequest
               type: object
       responses:
