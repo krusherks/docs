@@ -165,11 +165,14 @@ paths:
               example-0001:
                 value:
                   input: nyc trip
+                  limit: 50
             schema:
               additionalProperties: false
               properties:
                 input:
                   type: string
+                limit:
+                  type: integer
               title: APIV1GetskusPostRequest
               type: object
       responses:
